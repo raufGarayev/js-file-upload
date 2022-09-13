@@ -11,7 +11,14 @@ function logFile (event) {
    let str = event.target.result;
    let img = document.createElement('img');
    img.src = str;
-   app.append(img);
+   if(app.children.length == 0) {
+      app.append(img)
+   }
+   else {
+      app.children[0].remove()
+      app.append(img)
+   }
+   /* app.append(img); */
    console.log(str);
 }
 
