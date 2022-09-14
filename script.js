@@ -18,7 +18,6 @@ function logFile (event) {
       app.children[0].remove()
       app.append(img)
    }
-   /* app.append(img); */
    console.log(str);
 }
 
